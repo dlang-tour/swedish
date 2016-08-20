@@ -1,0 +1,5 @@
+title: The Dlang Tour
+start: welcome/welcome-to-d
+repo: dlang-tour/swedish
+ordering:
+- welcome
