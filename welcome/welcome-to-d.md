@@ -40,7 +40,7 @@ Klicka på kör knappen (eller `Ctrl+enter`) för att kompilera och köra koden.
 
 ### Bidra
 
-Denna rundtur är [öppen källkod](https://github.com/stonemaster/dlang-tour)
+Denna rundtur är [öppen källkod](https://github.com/dlang-tour)
 och vi tar varmt emot 'pull requests' från vem som helst som vill göra denna rundtur ännu bättre.
 
 ## {SourceCode}
