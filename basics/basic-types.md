@@ -3,12 +3,12 @@
 D erbjuder ett antal grundläggande typer som alltid har samma
 storlek **oavsett** vilken plattform. Det enda undantaget
 är typen `real` som erbjuder den högsta möjliga precision för
-flyttal. Det finns ingen skillnad mellan storleken på ett heltal
-oavsett om programmet är kompilerat för 32-bitar eller 64-bitars system.
+flyttal. Det finns inga skillnader för heltals storlekarna oavsett
+om programmet är kompilerat för ett 32-bitar eller ett 64-bitars system.
 
 | typ                           | storlek
 |-------------------------------|------------
-|`bool`                         | 8-bit
+|`byte`                         | 8-bit
 |`bool`, `ubyte`, `char`        | 8-bit
 |`short`, `ushort`, `wchar`     | 16-bit
 |`int`, `uint`, `dchar`         | 32-bit
@@ -27,9 +27,9 @@ UTF-8 tecken, `wchar` används i UTF-16 strängar och `dchar`
 i UTF-32 strängar.
 
 En omvandling mellan variabler av olika typer är endast
-tillåtet av kompilatorn om ingen precision går förlorad. Dock,
-en konvertering mellan flyttalstyper (T.ex. `double` till `float`)
-är tillåtet.
+tillåtet av kompilatorn om ingen precision går förlorad.
+En konvertering mellan flyttalstyper (T.ex. `double` till `float`)
+är dock tillåtet.
 
 En omvandling till en annan typ kan framtvingas genom att
 använda `cast(TYP) minVar` uttrycket. Det måste dock användas

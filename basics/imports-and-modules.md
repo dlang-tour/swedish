@@ -18,8 +18,9 @@ genom att göra det uppenbart varifrån en symbol kommer ifrån,
 det är också ett sätt att förhindra konflikter mellan symboler som har
 samma namn men inte tillhör samma modul.
 
-En `import` sats behöver inte befinnas i början av källflen.
-Den kan också användas lokalt inom funktioner.
+En `import` sats behöver inte befinna sig i början av en källfil.
+Den kan också användas lokalt inom funktioner eller inom någon
+annan omfattning.
 
 ## {SourceCode}
 
