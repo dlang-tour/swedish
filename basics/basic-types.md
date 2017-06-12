@@ -12,7 +12,7 @@ om programmet är kompilerat för ett 32-bitar eller ett 64-bitars system.
 |`bool`, `ubyte`, `char`        | 8-bit
 |`short`, `ushort`, `wchar`     | 16-bit
 |`int`, `uint`, `dchar`         | 32-bit
-|`long`, `ulong`                | 32-bit
+|`long`, `ulong`                | 64-bit
 
 #### Flyttalstyper:
 
@@ -23,7 +23,7 @@ om programmet är kompilerat för ett 32-bitar eller ett 64-bitars system.
 |`real`   | >= 64-bit (generellt 64-bit, men 80-bit på Intel x86 32-bit)
 
 Prefixet `u` betecknar en *osignerad* typ. `char` översätter till
-UTF-8 tecken, `wchar` används i UTF-16 strängar och `dchar`
+ett UTF-8 tecken, `wchar` används i UTF-16 strängar och `dchar`
 i UTF-32 strängar.
 
 En omvandling mellan variabler av olika typer är endast
@@ -41,7 +41,7 @@ från höger sida av uttrycket. `auto minVar = 7` kommer att härleda typen
 kan inte ändras, precis som med andra variabler med en uttryckligen
 angiven typ.
 
-### Typ egenskaper
+### Typegenskaper
 
 Alla datatyper har en egenskap `.init` som de initialiseras till. För alla
 heltal är detta `0` och för flyttal är det `nan` (*not a number*, "Inte ett tal").
@@ -59,19 +59,14 @@ Flyttalstyper har också en egenskaperna `.nan` (NaN-värde), `.infinity`
 Varje typ har också en `.stringof` egenskap som ger sitt namn som en
 sträng.
 
-### Index i D
+### size_t
 
 I D har index oftast alias typen `size_t`, eftersom det är en typ som är
 tillräckligt stor för att representera en förskjutning i alla adresserbara
 minnen, `uint` för 32-bitars och `ulong` för 64-bitarsarkitekturer.
 
-### Assert uttrycket
-
-`assert` är ett uttryck som verifierar ett villkor i debugläge och avbryter
-med ett `AssertionError` ifall det misslyckas.
-`assert(0)` används för att markera oåtkomlig kod.
-
 ### Fördjupning
+**NOTERA:** Följande länkar är på engelska
 
 #### Grundläggande referenser
 
@@ -85,7 +80,7 @@ med ett `AssertionError` ifall det misslyckas.
 
 - [Översikt över alla grundläggande datatyper i D](https://dlang.org/spec/type.html)
 - [`auto` och `typeof` i _Programmering i D_](http://ddili.org/ders/d.en/auto_and_typeof.html)
-- [Typ egenskaper](https://dlang.org/spec/property.html)
+- [Typegenskaper](https://dlang.org/spec/property.html)
 - [Assert uttrycket](https://dlang.org/spec/expression.html#AssertExpression)
 
 ## {SourceCode}
