@@ -80,7 +80,7 @@ minnen, `uint` för 32-bitars och `ulong` för 64-bitarsarkitekturer.
 
 - [Översikt över alla grundläggande datatyper i D](https://dlang.org/spec/type.html)
 - [`auto` och `typeof` i _Programmering i D_](http://ddili.org/ders/d.en/auto_and_typeof.html)
-- [Typ egenskaper](https://dlang.org/spec/property.html)
+- [Typegenskaper](https://dlang.org/spec/property.html)
 - [Assert uttrycket](https://dlang.org/spec/expression.html#AssertExpression)
 
 ## {SourceCode}
