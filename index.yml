@@ -4,3 +4,9 @@ repo: dlang-tour/swedish
 ordering:
 - welcome
 - basics
+translations:
+ editor.run: Kör
+ editor.reset: Återställ
+ editor.format: Formatera
+ editor.keyboard_shortcuts: Tangentbordsgenvägar
+ editor.export: Exportera
