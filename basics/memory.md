@@ -43,7 +43,7 @@ import std.stdio : writeln;
 void safeFun() @safe
 {
     writeln("Hello World");
-    // Allokering av minne med GC är också säkert
+    // Allokering av minne med GC är säkert
     int* p = new int;
 }
 
