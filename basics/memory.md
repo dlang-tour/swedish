@@ -5,7 +5,7 @@ hantering av minnet. Med det sagt är manuell minneshantering en källa
 till många fel, så D använder sig av en *skräpsamlare* (garbage collector) som
 standardmetod för att hantera minnestilldelningar.
 
-D erbjuder en pekartyper `T*` likt som i programmeringsspråket C:
+D erbjuder pekartyper `T*` likt som i programmeringsspråket C:
 
     int a;
     int* b = &a; // b innehåller adressen till a
