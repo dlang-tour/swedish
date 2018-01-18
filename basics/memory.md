@@ -5,7 +5,7 @@ hantering av minnet. Med det sagt är manuell minneshantering en källa
 till många fel, så D använder sig av en *skräpsamlare* (garbage collector) som
 standardmetod för att hantera minnestilldelningar.
 
-D erbjuder en pekartyp `*T` likt i programmeringsspråket C:
+D erbjuder en pekartyper `T*` likt som i programmeringsspråket C:
 
     int a;
     int* b = &a; // b innehåller adressen till a
@@ -19,8 +19,7 @@ som returnerar en pekare till det allokerade minnet.
 Så fort minnet adresserat av `a` inte länge hänvisas till av någon variabel
 i programmet, frigörs minnet av skräpsamlaren.
 
-Det finns tre säkerhetsnivåer för funktioner i D: `@system`, `@trusted` och `@safe`.
-Om inget annat anges är `@system` standard. `@safe` är en delmängd av D som förhindrar minnesfel genom att förbjuda vissa operationer. `@safe` kod kan endast anropa andra `@safe` eller `@trusted` funktioner. Vidare är manuell pekararitmetik förbjuden i `@safe` kod.
+Det finns tre säkerhetsnivåer för funktioner i D: `@system`, `@trusted` och `@safe`. Om inget annat anges är `@system` standard. `@safe` är en delmängd av D som förhindrar minnesfel genom att förbjuda vissa operationer. `@safe` kod kan endast anropa andra `@safe` eller `@trusted` funktioner. Vidare är manuell pekararitmetik förbjuden i `@safe` kod:
 
     void main() @safe {
         int a = 5;
@@ -28,7 +27,7 @@ Om inget annat anges är `@system` standard. `@safe` är en delmängd av D som f
         int* c = p + 5; // Fel
     }
 
-`@trusted` funktioner måste verifieras manuellt av programmeraren och gör det möjligt att skapa en koppling mellan SafeD () och den underliggande osäkra lågnivådelen av D-program.
+`@trusted` funktioner måste verifieras manuellt av programmeraren och gör det möjligt att skapa en koppling mellan SafeD och den underliggande osäkra lågnivådelen av D-program.
 
 ### Fördjupning
 **NOTERA:** Följande länkar är på engelska
@@ -42,7 +41,7 @@ import std.stdio : writeln;
 
 void safeFun() @safe
 {
-    writeln("Hello World");
+    writeln("Hej Världen!");
     // Allokering av minne med GC är säkert
     int* p = new int;
 }
