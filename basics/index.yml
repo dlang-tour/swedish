@@ -2,7 +2,7 @@ title: D språkets grunder
 ordering:
 - imports-and-modules
 - basic-types
-#- memory
+- memory
 #- storage-classes
 #- controlling-flow
 #- functions
